@@ -1,0 +1,8 @@
+%matplotlib notebook
+
+import networkx as nx
+import matplotlib.pyplot as plt
+G = nx.Graph()
+G.add_edges_from([('A', 'B'), ('A', 'C'), ('B', 'D'), ('C', 'D'), ('C', 'E'), ('E', 'D'), ('D', 'G'), ('E', 'G'), ('G', 'F')])
+
+nx.draw_networkx(G)
